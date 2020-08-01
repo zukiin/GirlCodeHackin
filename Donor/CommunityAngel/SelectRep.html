@@ -99,29 +99,69 @@
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="country">Provinces</label>
+                    <label for="lname">Individual/Group</label>
                 </div>
-                <div class="col-75">
-                    <select id="country" name="country">
+                <fieldset>
+                    <div class="some-class">
+                        <input type="radio" class="radio" name="x" value="y" id="y" />
+                        <label for="y">Individual</label>
+                        <input type="radio" class="radio" name="x" value="z" id="z" />
+                        <label for="z">Group</label>
+                    </div>
+                </fieldset>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Provinces</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
           <option value="australia">Australia</option>
           <option value="canada">Canada</option>
           <option value="usa">USA</option>
         </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-25">
-                    <label for="subject">Subject</label>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Pickup Locations</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="pickuplocatio" name="pickuplocatio">
+        <option value="australia">PineTown</option>
+        <option value="canada">Durban</option>
+        <option value="usa">Kokstad</option>
+      </select>
+                    </div>
                 </div>
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Type of Assistance</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="pickuplocatio" name="pickuplocatio">
+      <option value="australia">Food</option>
+      <option value="canada">Stationary</option>
+      <option value="usa">Cosmetics</option>
+      <option value="usa">Crops</option>
+      <option value="usa">Education Finance</option>
+    </select>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <input type="submit" value="Submit">
-            </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Reason for Nomination</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
         </form>
-    </div>
+        </div>
 
 </body>
 
