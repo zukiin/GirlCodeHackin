@@ -1,5 +1,5 @@
 .topnav {
-  background-color:saddlebrown;
+  background-color: #696966 ;
   overflow: hidden;
 }
 
@@ -15,12 +15,12 @@
 
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color:#b4b4b3  ;
   color: black;
 }
 
 
 .topnav a.active {
-  background-color:darkgoldenrod;
+  background-color:  #c4a106  ;
   color: white;
 }

@@ -37,31 +37,31 @@
 
   switch ($action) {
     case 'home':
-        $title = 'Together1 | Home';
+        $title = 'Sizabantu | Home';
         require_once 'views/frontend/home.php';
         break;
     case 'aboutus':
-        $title = 'Together1 | About Us';
+        $title = 'Sizabantu | About Us';
         require_once 'views/frontend/aboutus.php';
         break;
     case 'become_a_donor':
-        $title = 'Together1 | Become A Donor';  
+        $title = 'Sizabantu | Become A Donor';  
         require_once 'views/frontend/becomeadonor.php';
         break;
     case 'contactus':
-        $title = 'Together1 | Contact Us';
+        $title = 'Sizabantu | Contact Us';
         require_once 'views/frontend/contactus.php';
         break;
     case 'account':
-        $title = 'Together1 | Acoount';
+        $title = 'Sizabantu | Acoount';
         require_once  'views/frontend/account.php';
         break;
     case 'login':
-        $title = 'Together1 | Login';
+        $title = 'Sizabantu | Login';
         require_once  'views/frontend/login.php';
         break;
     case 'register':
-        $title = 'Together1 | Register';
+        $title = 'Sizabantu | Register';
         require_once  'views/frontend/register.php';
         break;
     default :
