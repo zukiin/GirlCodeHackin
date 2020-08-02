@@ -61,6 +61,7 @@
         
 
             <h1>Contact Us</h1>
+            <h4><i>Want to know more about us? Give us a shout.</i></h4>
 
             <div class="container">
                 <form action="/action_page.php">

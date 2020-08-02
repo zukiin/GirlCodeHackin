@@ -12,4 +12,10 @@ abstract class Donor
     $sql = "SELECT DISTINCT District FROM `city` WHERE CountryCode = 'ZAF'";
     return DBHandler::DQLi($sql);
   }
+
+  public static function fetch_cities($province)
+  {
+    $sql = "SELECT Name FROM `city` WHERE District = '$province' ";
+    return DBHandler::DQLi($sql);
+  }
 }

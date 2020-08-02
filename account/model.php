@@ -28,16 +28,14 @@ abstract class Account
     if(empty($email)) {
       return array('Message' => 'email field is empty', 'Error' => true);
     }
-    if(empty($companyname)) {
-      return array('Message' => 'companyname field is empty', 'Error' => true);
-    }
     if(empty($contype)) {
       return array('Message' => 'contype field is empty', 'Error' => true);
     }
 
     $sql =  "INSERT INTO user (name, surname, email, companyname, contype, password) VALUES ('$name', '$surname', '$email', '$companyname', '$contype', '$psw')";
     DBHandler::DMLi($sql);
-    return true;
+    self::login($http_request);
+    return false;
   }
 
   public static function login($http_request)
