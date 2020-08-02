@@ -98,6 +98,14 @@ abstract class Text {
         }
         return true;
     }
+
+    public static function is_name_symbol($txt){
+        if (!preg_match("/^([a-zA-Z' ]+)$/", $txt)) {
+            return false;
+        }
+        return true;
+    }
+
     public static function is_name_plus($text,$min=1,$max=20){
         $text = trim($text);
         if(strlen($text)<$min){            return "minimum character length: $min";}

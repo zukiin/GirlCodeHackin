@@ -64,6 +64,9 @@
         $title = 'Sizabantu | Register';
         require_once  'views/frontend/register.php';
         break;
+    case 'dashboard':
+        header("Location: /dashboard");
+        break;
     default :
         $error_message = "case not handled for action '<strong>$action</strong>'";
         $error_message .= "Check if the file exist and try again. Or drop a whatsapp message ;)";
