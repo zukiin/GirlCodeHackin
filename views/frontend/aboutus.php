@@ -84,13 +84,16 @@
   </p>
 
   <h2>What we do:</h2>
-  <p>
+  <div style="text-align: center;">
+    <p>
       Find Sponsorships
       Background checks at school
       Bridging the gap between the government and the needy ( providing food to the needy households)
       Identification of needy families
       Make sure that parcels are received 
   </p>
+  </div>
+  
 </p>
       
 

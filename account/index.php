@@ -41,7 +41,7 @@ if (empty($action)) {$action = 'home';}
 switch ($action) {
   case 'register':
       if( Account::register($_REQUEST) ) {
-        header("location: ..?q=account&success=Account Created You may log in now.");
+        header("location: ..?q=dashboard&success=You are now logged in as " . $_SESSION['name'] . ' ' . $_SESSION['surname']);
       } else {
         header("location: ..?q=account&error=failed to register user, make certain that all fields are correct");
       }
