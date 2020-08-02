@@ -27,7 +27,7 @@ $uname = $uid = null;  //  currently logged in user
 if (isset($_SESSION['name'])) {
   $session = 'online';
 } else {
-  header("location: ?q=home");
+  header("location: /");
   exit();
 }
 
@@ -61,17 +61,19 @@ switch ($action) {
     break;
 
   case 'list_donor':
-    $title = 'Sizabantu | Dashboard';
+    $province = Donor::fetch_province();
     require_once 'views/donor/list_donor.php';
     break;
 
   case 'list_recipient':
     $title = 'Sizabantu | Dashboard';
+    $province = Donor::fetch_province();
     require_once 'views/recipient/list_recipient.php';
     break;
 
   case 'register_recipient':
     $title = 'Sizabantu | Dashboard';
+    $province = Donor::fetch_province();
     require_once 'views/recipient/register_recipient.php';
     break;
 

@@ -4,12 +4,13 @@
     <body style="background-color:white;">
         <?php require_once dirname(__FILE__,2). '/universal/signedout/navigation.php';?>
         
-        <form id="regForm" action="/action_page.php">
+        <form id="regForm" action="/account/index.php?q=register" method="post">
         <h1>Become a Donor Today:</h1>
         <!-- One "tab" for each step in the form: -->
+        <input type="hidden" value="Donor" name="contype">
         <div class="tab"> Donor Details:
-            <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-            <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+            <p><input placeholder="First name..." oninput="this.className = ''" name="name"></p>
+            <p><input placeholder="Last name..." oninput="this.className = ''" name="surname"></p>
         </div>
         <div class="tab">Contact Info:
             <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
@@ -22,7 +23,8 @@
         </div>
         <div class="tab">Login Info:
             <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-            <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+            <p><input placeholder="Password..." oninput="this.className = ''" name="psw" type="password"></p>
+            <p><input placeholder="Repeat-Password..." oninput="this.className = ''" name="psw_repeat" type="password"></p>
         </div>
         <div style="overflow:auto;">
             <div style="float:right;">

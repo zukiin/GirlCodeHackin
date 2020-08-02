@@ -24,7 +24,7 @@
 
 <!-- Heading -->
 <div class="sidebar-heading">
-  Interface
+  Services
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->
@@ -36,9 +36,8 @@
   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Options:</h6>
-      <a class="collapse-item" href="?q=become_a_donor">Become a donor</a>
       <a class="collapse-item" href="?q=donor_contribution">Donor Contribution</a>
-      <a class="collapse-item" href="?q=list_donor">List Donor</a>
+      <!-- <a class="collapse-item" href="?q=list_donor">List Donor</a> -->
     </div>
   </div>
 </li>
@@ -53,7 +52,7 @@
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header">Options</h6>
       <a class="collapse-item" href="?q=register_recipient">Register Recipient</a>
-      <a class="collapse-item" href="?q=list_recipient">List Recipient</a>
+      <a class="collapse-item" href="?q=list_recipient">History Recipient</a>
     </div>
   </div>
 </li>
@@ -63,7 +62,7 @@
 
 <!-- Heading -->
 <div class="sidebar-heading">
-  Addons
+  Tracker
 </div>
 
 <!-- Nav Item - Pages Collapse Menu -->

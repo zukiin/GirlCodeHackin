@@ -69,8 +69,11 @@
                 <input type="text" placeholder="Enter Company Name" name="companyname" required>
 
                 <label for="TypeofContribution"><b>Type of Contribution</b></label>
-                <input type="text" placeholder="Choose type of Contribution" name="contype" required>
-
+                <select style="width:100%;padding:5px;">
+                    <option value="Recipient">Recipient</option>
+                    <option value="Recipient">Donor</option>
+                </select>
+                <br/>
                 <label for="psw"><b>Password</b></label>
                 <input type="password" placeholder="Enter Password" name="psw" required>
 
